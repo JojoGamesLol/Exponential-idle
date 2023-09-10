@@ -22,7 +22,7 @@ var init = () => {
 
     // s1
     {
-        let getDesc = (level) => "s_1=" + getS1.toString(0);
+        let getDesc = (level) => "s_1=" + getS1(s1.level).toString(0);
         s1 = theory.createUpgrade(0, currency, new FirstFreeCost(new ExponentialCost(800, 1.44)));
         s1.getDescription = (_) => Utils.getMath(getDesc(s1.level));
         s1.getInfo = (amount) => Utils.getMathTo(getDesc(s1.level), getDesc(s1.level + amount));
