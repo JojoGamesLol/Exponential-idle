@@ -62,7 +62,6 @@ var getPrimaryEquation = () => {
 var getPublicationMultiplier = (tau) => tau.pow(0.1);
 var getPublicationMultiplierFormula = (symbol) => "\\frac{{" + symbol + "}^{0.1}}";
 var getTau = () => currency.value;
-var get2DGraphValue = () => BigNumber.ZERO;
 
 var postPublish = () => {
     currency.value = BigNumber.ZERO;
