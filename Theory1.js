@@ -32,7 +32,7 @@ var init = () => {
     // Permanent Upgrades
     theory.createPublicationUpgrade(0, currency, 1e18);
     theory.createBuyAllUpgrade(1, currency, 1e21);
-    theory.createAutoBuyerUpgrade(2, currency2, 1e48);
+    theory.createAutoBuyerUpgrade(2, currency2, 1000);
     
     /////////////////
     //// Achievements   
@@ -59,7 +59,7 @@ var getPrimaryEquation = () => {
     return result;
 }
 
-var getPublicationMultiplier = (tau) => tau.log2();
+var getPublicationMultiplier = (tau) => tau.pow(0.1);
 var getPublicationMultiplierFormula = (symbol) => "\\frac{{" + symbol + "}^{0.1}}";
 var getTau = () => currency.value;
 var get2DGraphValue = () => BigNumber.ZERO;
