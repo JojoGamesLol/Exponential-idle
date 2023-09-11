@@ -13,3 +13,9 @@ var version = "1.0.0";
 var currency;
 
 currency = theory.createCurrency();
+
+var getPrimaryEquation = () => {
+    let result = "\\rho=\\frac{c_1}{2}";
+ 
+    return result;
+}
