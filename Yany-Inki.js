@@ -21,10 +21,10 @@ var init = () => {
 
     // u
     {
-        let getDesc = (level) => "u=" + getS1(s1.level).toString(2);
+        let getDesc = (level) => "u=" + getU(u.level).toString(2);
         u = theory.createUpgrade(0, currency, new FirstFreeCost(new ExponentialCost(1e12, 10)));
-        u.getDescription = (_) => Utils.getMath(getDesc(s1.level));
-        u.getInfo = (amount) => Utils.getMathTo(getDesc(s1.level), getDesc(s1.level + amount));
+        u.getDescription = (_) => Utils.getMath(getDesc(u.level));
+        u.getInfo = (amount) => Utils.getMathTo(getDesc(u.level), getDesc(u.level + amount));
         u.maxLevel = 1492;
     }
 }
