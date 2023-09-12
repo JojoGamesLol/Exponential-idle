@@ -57,6 +57,9 @@ var init = () => {
         n = theory.createUpgrade(2, currency, new FirstFreeCost(new ExponentialCost(10, Math.log2(GOLDEN_RATIO))));
         n.getDescription = (_) => Utils.getMath(getDesc(n.level));
         n.getInfo = (amount) => Utils.getMathTo(getDesc(n.level), getDesc(n.level + amount));
+        n.bought = () => {
+            currency.value = 1e308
+        }
     }
 
     // k
