@@ -35,4 +35,6 @@ var getPrimaryEquation = () => {
     return result;
 }
 
+var getU = (level) => level * 0.2;
+
 init();
