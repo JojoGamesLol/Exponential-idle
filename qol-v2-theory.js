@@ -15,7 +15,7 @@ var currency;
 var breh1;
 
 var ftEntry = ui.createEntry({
-     column: 1;
+    column: 1,
     text: game.f.toString(6),
     horizontalOptions: LayoutOptions.CENTER,
     fontSize:10
