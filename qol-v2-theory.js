@@ -22,7 +22,7 @@ var ftEntry = ui.createEntry({
 })
 
 var ftChange = () => ui.createPooup({
-	title: "Change f(t)";
+	title: "Change f(t)",
 	content: ui.createStackLayout({children: [
           ui.createLabel({text: "You change f(t) them too."}),
           ui.createGrid({
