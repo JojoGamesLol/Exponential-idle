@@ -41,7 +41,7 @@ var ftChange = () => ui.createPooup({
          ui.createButton({
              text:'Yes',
              onClicked: () => {
-                    game.f = BigNumber.from(ftEntry.text);
+                    game.f = ftEntry.text
              }
          }),
     ]
@@ -59,7 +59,7 @@ var init = () => {
         breh1 = theory.createUpgrade(0, currency, new FreeCost());
         breh1.getDescription = (_) => getDesc();
         breh1.getInfo = () => getInfo();
-        breh1.bought = (amount) = {
+        breh1.bought = (amount) => {
         	breh1.level -= amount;
         	ftChange.show();
         }
